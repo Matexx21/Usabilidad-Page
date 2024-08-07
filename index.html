@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Chimi Churri</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <img src="Img/Logo.jpeg" alt="Logo del emprendimiento">
+        <section id="navegacion">
+            <h1 tabindex="1">Aderezos 100% Naturales</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" tabindex="0">Inicio</a></li>
+                    <li><a href="#catalogo" tabindex="0">Catálogo</a></li>
+                    <li><a href="#Contactos" tabindex="0">Contactos</a></li>
+                    <li><a href="#ubicacion" tabindex="0">Ubicación</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section id="inicio" tabindex="0">
+            <h2 >Somos el mejor aderezo para tus comidas</h2>
+            <p>Ideal para acompañar tus Carnes, Pollos, Mariscos y Vegetales en Ensaladas</p>
+            <img src="Img/Portada.jpeg" alt="Imagen de los direfentes aderezos" tabindex="0">
+        </section>
+
+        <section id="Catálogo" tabindex="0">
+            <h2>Catálogo</h2>
+            <ul>
+                <li>
+                    <h3>Chimichurri Original</h3>
+                    <img src="Img/aderezos.jpeg" alt="Imagen del envase de chimichurri original de 220 gramos">
+                </li>
+                <li>
+                    <h3>Chimichurri Con Aji</h3>
+                    <img src="Img/Carne.jpeg" alt="Imagen del envase de chimichurri con aji de 220 gramos">
+                </li>
+                <li>
+                    <h3>Chimichurri en Aceite de Oliva</h3>
+                    <img src="Img/Camarones.jpeg" alt="Imagen del envase de chimichurri en aceite de oliva de 220 gramos">
+                </li>
+                <li>
+                    <h3>Chimichurri presentacion 400 gramos</h3>
+                    <img src="Img/Portada.jpeg" alt="Imagen del envase de los tres chimichurris en presentacion de 400 gramos">
+                </li>
+            </ul>
+        </section>
+
+        <section id="Contactos">
+            <h2 tabindex="0">Contactos</h2>
+            <form action="submit_form.php" method="post" aria-labelledby="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required aria-required="true" aria-label="Nombre">
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required aria-required="true" aria-label="Correo electrónico">
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true" aria-label="Mensaje"></textarea>
+                
+                <button type="submit" aria-label="Enviar formulario">Enviar</button>
+            </form>
+            <div id="informacion-contacto" aria-labelledby="informacion-contacto">
+                <p><strong>Teléfono:</strong> +593 999261825</p>
+                <p><strong>Correo electrónico:</strong> <a href="mailto:elchimichurri@hotmail.com">elchimichurri@hotmail.com</a></p>
+                <p><strong>Dirección:</strong> Quito-Ecuador</p>
+            </div>
+        </section>
+        
+        
+        <section id="ubicacion" tabindex="0">
+            <h2>Ubicación</h2>
+            <p>Nos encontramos en Quito, Ecuador.</p>
+            <img src="Img/Ubicación.png" alt="Imagen del mapa con la dirección y punto de venta">
+            <a href="https://maps.app.goo.gl/ZaBHQHy4GBCMa4bW6" tabindex="0">Google Maps</a>
+        </section>
+    </main>
+
+    <footer>
+        <p tabindex="0">&copy; El Chimi Churri todos los derechos reservados.</p>
+        <p tabindex="0">cel: +593 9998887287</p>
+        <p tabindex="0">e-mail: elchimichurri@hotmail.com</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const primerElemento = document.querySelector('[tabindex="1"]');
+            if (primerElemento) {
+                primerElemento.focus();
+            }
+        });
+    </script>
+</body>
+</html>

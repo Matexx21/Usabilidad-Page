@@ -1,0 +1,239 @@
+/* Diseño básico y accesible */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Asegura que los elementos estén alineados correctamente */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    max-width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+header #navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center; /* Centra el título del header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:focus, nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding-top: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centra los títulos en el main */
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center; /* Centra los títulos de las secciones */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:focus, button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+}
+
+header img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+section img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#catalogo ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center; /* Centra el menú del catálogo */
+}
+
+#catalogo ul li {
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#catalogo ul li h3 {
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+}
+
+#catalogo ul li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#catalogo ul li p {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #666;
+}
+
+#tabla-menu {
+    margin-top: 2em;
+}
+
+#tabla-menu h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+#tabla-menu table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#tabla-menu th, #tabla-menu td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-menu th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+#tabla-menu tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tabla-menu tr:hover {
+    background-color: #ddd;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.video-container iframe {
+    width: 80%;
+    max-width: 640px;
+    height: 360px;
+    border-radius: 8px;
+}
+
+#ubicacion {
+    margin-top: 2em;
+}
+
+#ubicacion .map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ubicacion img {
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
